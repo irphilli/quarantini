@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require "dry-struct"
-require_relative "../types"
+require 'dry-struct'
+require_relative '../types'
 
 module Quarantini
   module Reporters

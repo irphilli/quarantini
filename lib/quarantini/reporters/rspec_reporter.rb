@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 if defined? RSpec
-  require "rspec/core/formatters/base_formatter"
-  require_relative "quarantine_result"
+  require 'rspec/core/formatters/base_formatter'
+  require_relative 'quarantine_result'
 
   module Quarantini
     module Reporters
