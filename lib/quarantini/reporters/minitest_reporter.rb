@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-if defined? ::Minitest
+if defined? Minitest
   module Quarantini
     module Reporters
       class MinitestReporter < Minitest::Reporters::BaseReporter

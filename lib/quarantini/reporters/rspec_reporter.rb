@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-if defined? ::RSpec
+if defined? RSpec
   require "rspec/core/formatters/base_formatter"
   require_relative "quarantine_result"
 

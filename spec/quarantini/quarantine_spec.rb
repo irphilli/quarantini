@@ -8,9 +8,9 @@ RSpec.describe Quarantini::Quarantine do
   describe ".expires_at" do
     context "with an unknown type" do
       specify do
-        expect {
+        expect do
           described_class.new(expires_at: 3).expires_at
-        }.to raise_error(ArgumentError, "Unknown expiry type Integer.  Expecting one of (nil|String|Date)")
+        end.to raise_error(ArgumentError, "Unknown expiry type Integer.  Expecting one of (nil|String|Date)")
       end
     end
 
