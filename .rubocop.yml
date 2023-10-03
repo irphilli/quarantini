@@ -12,8 +12,8 @@ AllCops:
 Gemspec/DevelopmentDependencies:
   EnforcedStyle: gemspec
 
-# Style/SpecialGlobalVars:
-#  Enabled: false
+Style/Documentation:
+  Enabled: false
 
 # Will lean on CodeClimate for these
 Metrics/AbcSize:
