@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary = 'A set of tools to remove tests from circulation'
   spec.homepage = "https://github.com/irphilli/#{spec.name}"
+  spec.license = 'MIT'
   spec.required_ruby_version = '>= 3.1'
 
   spec.metadata['homepage_uri'] = spec.homepage
@@ -29,14 +30,14 @@ Gem::Specification.new do |spec|
   spec.bindir = 'exe'
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'dry-configurable'
-  spec.add_dependency 'dry-struct'
-  spec.add_dependency 'dry-types'
+  spec.add_dependency 'dry-configurable', '~> 1.0'
+  spec.add_dependency 'dry-struct', '~> 1.0'
+  spec.add_dependency 'dry-types', '~> 1.0'
 
-  spec.add_development_dependency('rake')
-  spec.add_development_dependency('rspec')
-  spec.add_development_dependency('rubocop')
-  spec.add_development_dependency('rubocop-performance')
-  spec.add_development_dependency('rubocop-rake')
-  spec.add_development_dependency('rubocop-rspec')
+  spec.add_development_dependency 'rake', '13.0.6'
+  spec.add_development_dependency 'rspec', '3.12.0'
+  spec.add_development_dependency 'rubocop', '1.56'
+  spec.add_development_dependency 'rubocop-performance', '1.19.1'
+  spec.add_development_dependency 'rubocop-rake', '0.6.0'
+  spec.add_development_dependency 'rubocop-rspec', '2.24.1'
 end
